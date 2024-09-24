@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Honey Hot&Cool</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("rest.b.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Honey<br>Hot&Cool</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>Honey<br>Hot&Cool</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'MOMO');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">MOMO</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'FRIED RICE & NOODLES');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">RICE & NOODLES</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'POTATO SPECIALS');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">STARTER</div>
+      </a>
+    </div>
+
+    <div id="MOMO" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>VEG MOMO</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100</span></h1>
+      <p class="w3-text-grey">With Fresh masala and spicy flavour with different vegetables</p>
+      <hr>
+   
+      <h1><b>Paneer Momo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">120</span></h1>
+      <p class="w3-text-grey">Fresh hand-made paneer with perfect flavours</p>
+      <hr>
+      
+      <h1><b>Chicken Momo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">With juicy tender chicken mixed with spicy ingredients</p>
+      <hr>
+
+      <h1><b>Veg-Gravy Momo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey">With Fresh masala and spicy flavour with different vegetables</p>
+      <hr>
+
+      <h1><b>Gravy-Paneer Momo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">250</span></h1>
+      <p class="w3-text-grey">Fresh hand-made paneer with perfect flavours and juicy momo</p>
+      <hr>
+
+      <h1><b>Gravy-Chicken Momo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">300</span></h1>
+      <p class="w3-text-grey">With juicy tender chicken mixed with spicy ingredients</p>
+      <hr>
+
+      <h1><b> Chicken-Kurkure MOMO</b> <span class="w3-right w3-tag w3-dark-grey w3-round">280</span></h1>
+      <p class="w3-text-grey">With juicy tender chicken mixed with spicy ingredients added with Kurkure flavour</p>
+      <hr>
+    </div>
+
+    <div id="FRIED RICE & NOODLES" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Veg-Fried Rice</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">50</span></h1>
+      <p class="w3-text-grey">Fine rice with perfect veggies</p>
+      <hr>
+   
+      <h1><b>Veg-Paneer Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100</span></h1>
+      <p class="w3-text-grey">Fresh paneer with sauces</p>
+      <hr>
+      
+      <h1><b>Egg-Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150</span></h1>
+      <p class="w3-text-grey">spicy added flavours</p>
+      <hr>
+
+      <h1><b>Chicekn-Fried Rice</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">Juicy,Tender chicken with indo-flavours</p>
+      <hr>
+
+      <h1><b>Veg-Noodles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">80</span></h1>
+      <p class="w3-text-grey">indo-spices</p>
+      <hr>
+
+      <h1><b>Egg-Noodles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100</span></h1>
+      <p class="w3-text-grey">indo-spices</p>
+      <hr>
+
+      <h1><b>Veg-Hakka Noodles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">90</span></h1>
+      <p class="w3-text-grey">indo-spices</p>
+      <hr>
+    </div>
+
+
+    <div id="POTATO SPECIALS" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>French-Fries</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">40</span></h1>
+      <p class="w3-text-grey">fresh potatoes with smooth layers</p>
+      <hr>
+   
+      <h1><b>Chilli Potato</b> <span class="w3-right w3-tag w3-dark-grey w3-round">60</span></h1>
+      <p class="w3-text-grey">perfect spices are added</p>
+      <hr>
+      
+      <h1><b>Chilli Paneer Gravy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">90</span></h1>
+      <p class="w3-text-grey">Grilled paneer, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Chicken lollypop </b> <span class="w3-right w3-tag w3-dark-grey w3-round">200</span></h1>
+      <p class="w3-text-grey">4pc/8pc</p>
+      <hr>
+
+      <h1><b>Chicken Chilli Dry </b> <span class="w3-right w3-tag w3-dark-grey w3-round">180</span></h1>
+      <p class="w3-text-grey">Juicy-Tender Chicken</p>
+      <hr>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>Honey Hot&cool was founded in Delhi by Miss.Ayaana.Here to provide the best foods conatining indian aromatic flavours to excite the customers in knowing more about the best tastes and flavours of india </p>
+    <p><strong>The Owner?</strong> Miss Ayaana<img src="WhatsApp Image 2024-09-10 at 23.55.31_b6109b9e.jpg" style="width:150px" class="w3-circle w3-right" alt="Owner?"></p>
+    <p>We are proud of our spices.</p>
+    <img src="download (2).jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Monday 9:00 - 10:00</p>
+        <p>tuesday 9:00 - 10:00</p>
+        <p>Wednesday 10.00 - 8:00</p>
+        <p>Thursday 10:00 - 12:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 7:00</p>
+        <p>Sunday - 9:00 - 6:00</p>
+        <p>WILL BE CLOSED ON FESTIVALS</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or connect us by Ummeimanshaik7@gmail.com</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="connect1.php" method="post">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="date" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by IMAN
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
